@@ -1,1 +1,52 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queeies</title>
+    <style>
+        .box{
+            font-size: 80px;
+            text-align: center;
+            background-color: red;
+            color: white;
+            display: none;
+            border: 10px;
+        }
+        @media (max-width:300px){
+            #box-1{
+                display: block;
+                background-color: rgb(4, 59, 4);
+                color: white;
+            }
+        }
+        @media (min-width:300px) and (max-width:800px){
+            #box-2{
+                display: block;
+                background-color: rgb(103, 0, 110);
+                color: rgb(240, 233, 233);
+            }
+        }
+        @media (min-width:800px) and (max-width:1000px){
+            #box-3{
+                display: block;
+                background-color: rgb(52, 0, 239);
+                color: rgb(250, 245, 245);
+            }
+        }
+        @media (min-width:1000px){
+            #box-4{
+                display: block;
+                background-color: rgb(110, 4, 55);
+                color: rgb(234, 219, 219);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1">My ak Phone hu</div>
+    <div class="box" id="box-2">My ak Tablet hu</div>
+    <div class="box" id="box-3">My ak Laptop hu</div>
+    <div class="box" id="box-4">My ak Computer hu</div>
+</body>
+</html>
